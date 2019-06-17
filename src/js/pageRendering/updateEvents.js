@@ -16,13 +16,17 @@ const eventDescription = (event) => {
   }
 }
 
+export const activateEvents = (active) => {
+  if (active) $('.events-container').removeClass('is-hidden');
+  else $('.events-container').addClass('is-hidden');
+}
 
 export const updateEvents = (publicEvents, eventTypes) => {
   const filteredEvents = publicEvents.filter(val => eventTypes.includes(val.type));
   let firstElement = 'is-primary';
   let domContent;
   
-  domContent = `<div class="events-container column">
+  domContent = `<div class="events-container column is-hidden">
                   <h2 class="subtitle is-4">History</h2>
                   <div class="timeline" id="user-timeline">`;
 
