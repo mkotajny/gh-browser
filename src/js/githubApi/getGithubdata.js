@@ -1,5 +1,6 @@
 import updateProfile from '../pageRendering/updateProfile';
 
+
 export default function getGithubData(url) 
 {
   fetch(url)
