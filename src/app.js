@@ -14,7 +14,7 @@ export class App {
         ))
       return;
 
-      getGithubApiData('https://api.github.com/users/' + userName);
+      getGithubApiData(userName);
     })
   }
 }

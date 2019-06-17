@@ -1,6 +1,6 @@
 import $ from 'cash-dom';
 
-export default function updateProfile(profile) {
+export const updateProfile = (profile) => {
   $('#profile-name').text($('.username.input').val())
   $('#profile-image').attr('src', profile.avatar_url)
   $('#profile-url').attr('href', profile.html_url).text(profile.login)
