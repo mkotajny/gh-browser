@@ -17,3 +17,15 @@
 .timeline .timeline-item {
   padding-bottom:1em;
 }
+
+@media all and (min-width: 768px) { 
+  .profile-container.column {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 1280px) { 
+  .profile-container.column {
+    width: 30%;
+  }
+}
